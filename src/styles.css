@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+*, ::after, ::before {
+  /* box-sizing: border-box; */
+}
+
+@font-face {
+  font-family: product-sans-medium;
+  src: url("assets/font/product-sans/product_sans_medium.ttf");
+}
+
+@font-face {
+  font-family: product-sans-black;
+  src: url("assets/font/product-sans/product_sans_black.ttf");
+}
+
+@font-face {
+  font-family: product-sans-bold;
+  src: url("assets/font/product-sans/product_sans_bold.ttf");
+}
+
+@font-face {
+  font-family: product-sans-light;
+  src: url("assets/font/product-sans/product_sans_light.ttf");
+}
+
+@font-face {
+  font-family: google-sans-regular;
+  src: url("assets/font/google-sans/ProductSans-Regular.woff");
+}
+
+@font-face {
+  font-family: google-sans-medium;
+  src: url("assets/font/google-sans/ProductSans-Medium.woff");
+}
+
+@font-face {
+  font-family: google-sans-light;
+  src: url("assets/font/google-sans/ProductSans-Light.woff");
+}
+
+@font-face {
+  font-family: google-sans-thin;
+  src: url("assets/font/google-sans/ProductSans-Thin.woff");
+}
+
+@font-face {
+  font-family: google-sans-black;
+  src: url("assets/font/google-sans/ProductSans-Black.woff");
+}
+
+@font-face {
+  font-family: google-sans-bold;
+  src: url("assets/font/google-sans/ProductSans-Bold.woff");
+}
