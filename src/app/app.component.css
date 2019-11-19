@@ -309,6 +309,7 @@ svg#clouds {
 .background-submit-btn {
   font-size: 14px;
   color: #fff;
+  background-color: #1967d2;
   margin-right: 20px;
   width: 100px;
   font-family: google-sans-medium, serif;
@@ -332,5 +333,25 @@ svg#clouds {
 }
 
 .nav-style {
-  margin-left: 40px;
+  margin-left: 20px;
+}
+
+.nav-style-text {
+  margin-left: 20px;
+}
+
+.logo-placeholder {
+  background-image: url("../assets/images/mw_logo.png");
+}
+
+.nav-logo-selector:hover {
+  cursor: pointer;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
 }
