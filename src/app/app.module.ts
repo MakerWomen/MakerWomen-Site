@@ -10,6 +10,7 @@ import { EventsComponent } from './components/pages/events/events.component';
 import { RulesComponent } from './components/pages/rules/rules.component';
 import { FaqsComponent } from './components/pages/faqs/faqs.component';
 import {AppRoutingModule} from './app-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {AppRoutingModule} from './app-routing.module';
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
