@@ -337,6 +337,7 @@ svg#clouds {
 }
 
 .nav-style-text {
+  font-family: google-sans-medium, serif !important;
   margin-left: 20px;
 }
 

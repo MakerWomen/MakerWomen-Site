@@ -17,3 +17,20 @@
   font-size: 14px;
   margin-right: 20px;
 }
+
+.col-footer-front {
+  padding-left: 50px;
+}
+
+.col-footer:hover {
+  cursor: pointer;
+  color: #000000;
+}
+
+.col-footer:active {
+  color: #000000;
+}
+
+.row-footer {
+  padding-top: 25px;
+}
