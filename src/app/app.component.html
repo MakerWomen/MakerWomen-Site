@@ -32,7 +32,29 @@
     </ul>
 
       <button class="btn btn-outline-primary background-challenge-btn primary shadow-button" >See more challenges</button>
-      <button class="btn background-submit-btn shadow-button" >Sign in</button>
+      <button class="btn background-submit-btn shadow-button"
+              *ngIf="!user"
+              (click)="loginGoogle()">Sign in</button>
+    <!--<button class="btn background-submit-btn shadow-button"
+            *ngIf="user"
+            (click)="logout()">Sign out</button>-->
+    <button *ngIf="user" mat-mini-fab
+            color="primary"
+            [matMenuTriggerFor]="avatarDropDown"
+            class="toolbar-avatar" [ngStyle]="{'background-image': 'url(' + user?.photoURL + ')'}"></button>
+
+    <mat-menu #avatarDropDown="matMenu">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ user?.displayName }}</mat-card-title>
+          <mat-card-subtitle>{{ user?.email }}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>exit_to_app</mat-icon>
+        <span style="font-family: google-sans-regular, serif">Sign Out</span>
+      </button>
+    </mat-menu>
   </div>
 </nav>
 </div>

@@ -356,3 +356,8 @@ svg#clouds {
   z-index: 10;
   width: 100%;
 }
+
+.toolbar-avatar {
+  background-size: cover;
+  box-shadow: none;
+}
