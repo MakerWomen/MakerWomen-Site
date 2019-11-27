@@ -1,0 +1,26 @@
+@media screen and (min-width: 320px) {
+  .mat-form-field-flex-handle {
+    width: 200px !important;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .mat-form-field-flex-handle {
+    width: 300px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mat-form-field-flex-handle {
+    width: 500px !important;
+  }
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}

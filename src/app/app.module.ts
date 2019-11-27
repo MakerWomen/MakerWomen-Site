@@ -14,7 +14,17 @@ import {AppRoutingModule} from './app-routing.module';
 import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireAuth, AngularFireAuthModule} from '@angular/fire/auth';
-import {MatButtonModule, MatCardModule, MatIconModule, MatMenuModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatMenuModule
+} from '@angular/material';
+import { ProfileComponent } from './components/pages/profile/profile.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +35,7 @@ import {MatButtonModule, MatCardModule, MatIconModule, MatMenuModule} from '@ang
     EventsComponent,
     RulesComponent,
     FaqsComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +49,10 @@ import {MatButtonModule, MatCardModule, MatIconModule, MatMenuModule} from '@ang
     MatMenuModule,
     MatCardModule,
     MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

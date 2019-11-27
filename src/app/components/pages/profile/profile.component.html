@@ -1,0 +1,142 @@
+<div class="container">
+  <div style="margin-top: 100px;">
+    <h1 style="font-family: google-sans-regular, serif; padding-bottom: 10px">Create your profile</h1>
+    <span style="font-family: google-sans-medium, serif; padding-top: 40px;  font-size: 17px; color: red" >
+      * Be careful and conscious to create your profile, because you don't have rights to edit in future. It's only for <u>female participants</u>.</span>
+  </div>
+
+  <div style="padding-top: 60px; padding-bottom: 60px">
+    <div class="card shadow">
+      <div class="card-header" style="font-size: 26px; font-family: google-sans-bold, serif">
+        1. Basic Information
+      </div>
+      <div class="card-body" style="padding-top: 40px">
+        <span class="card-title" style="font-size: 20px; font-family: google-sans-regular, serif; height: 50px">Your Handle</span>
+        <p style="padding-top: 20px; padding-bottom: 40px; font-family: google-sans-regular, serif">
+          <mat-form-field class="mat-form-field-flex-handle" appearance="outline">
+            <mat-label>Handle</mat-label>
+            <label>
+              <input style="font-size: 16px" matInput placeholder="Enter your handle" required>
+            </label>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint style="font-family: google-sans-bold, serif">Ex: If your name Monica Priya, then your handle may have monica_priya (or) monica.priya</mat-hint>
+          </mat-form-field>
+        </p>
+
+        <span class="card-title" style="font-size: 20px; padding-top: 40px; font-family: google-sans-regular, serif; height: 50px">Your Full Name</span>
+        <p style="padding-top: 20px; font-family: google-sans-regular, serif">
+          <mat-form-field class="mat-form-field-flex-handle" appearance="outline">
+            <mat-label>Full Name</mat-label>
+            <label>
+              <input style="font-size: 16px" matInput placeholder="Enter your full name" required>
+            </label>
+            <mat-icon matSuffix>account_box</mat-icon>
+          </mat-form-field>
+        </p>
+
+        <span class="card-title" style="font-size: 20px; padding-top: 40px; font-family: google-sans-regular, serif; height: 50px">Email ID</span>
+        <p style="padding-top: 20px; font-family: google-sans-regular, serif">
+          <mat-form-field class="mat-form-field-flex-handle mat-form-field-disabled" appearance="outline">
+            <mat-label>Email</mat-label>
+            <label>
+              <input [disabled]="true" style="font-size: 16px" matInput placeholder="Enter your email id">{{ user.email }}
+            </label>
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+        </p>
+
+        <span class="card-title" style="font-size: 20px; padding-top: 40px; font-family: google-sans-regular, serif; height: 50px">Phone Number</span>
+        <p style="padding-top: 20px; font-family: google-sans-regular, serif">
+          <mat-form-field class="mat-form-field-flex-handle" appearance="outline" style="border-color: #17202A">
+            <mat-label>Phone</mat-label>
+            <label>
+              <input style="font-size: 16px"
+                     matInput placeholder="Enter your phone number" [formControl]="number" required>
+            </label>
+            <mat-icon matSuffix>phone</mat-icon>
+            <mat-error *ngIf="number.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="padding-top: 40px; padding-bottom: 60px">
+    <div class="card shadow">
+      <div class="card-header" style="font-size: 26px; font-family: google-sans-bold, serif">
+        2. Background Information
+      </div>
+      <div class="card-body" style="padding-top: 40px">
+        <span class="card-title" style="font-size: 20px; font-family: google-sans-regular, serif; height: 50px">School / College Name</span>
+        <p style="padding-top: 20px; padding-bottom: 40px; font-family: google-sans-regular, serif">
+          <mat-form-field class="mat-form-field-flex-handle" appearance="outline">
+            <mat-label>School / College</mat-label>
+            <label>
+              <input style="font-size: 16px; width: 400px" matInput placeholder="Enter your School / College" required>
+            </label>
+            <mat-icon matSuffix>school</mat-icon>
+            <mat-hint style="font-family: google-sans-bold, serif">Enter full name of your school/college, <b>if you're working women use NA</b></mat-hint>
+          </mat-form-field>
+        </p>
+
+        <span class="card-title" style="font-size: 20px; font-family: google-sans-regular, serif; height: 50px">Your Standard / Year</span>
+        <p style="padding-top: 20px; padding-bottom: 40px; font-family: google-sans-regular, serif">
+          <mat-form-field class="mat-form-field-flex-handle" appearance="outline">
+            <mat-label>Standard / Year</mat-label>
+            <label>
+              <input style="font-size: 16px; width: 400px" matInput placeholder="Enter your Standard / Year" required>
+            </label>
+            <mat-icon matSuffix>school</mat-icon>
+            <mat-hint style="font-family: google-sans-bold, serif">Enter which standard / year you're in, <b>if you're working women use NA</b></mat-hint>
+          </mat-form-field>
+        </p>
+
+        <span class="card-title" style="font-size: 20px; font-family: google-sans-regular, serif; height: 50px">Your Department</span>
+        <p style="padding-top: 20px; padding-bottom: 40px; font-family: google-sans-regular, serif">
+          <mat-form-field class="mat-form-field-flex-handle" appearance="outline">
+            <mat-label>Department</mat-label>
+            <label>
+              <input style="font-size: 16px; width: 400px" matInput placeholder="Enter your department" required>
+            </label>
+            <mat-icon matSuffix>school</mat-icon>
+            <mat-hint style="font-family: google-sans-bold, serif">It's only for college students <b>if you're schooling & working women use NA</b></mat-hint>
+          </mat-form-field>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="padding-top: 40px; padding-bottom: 60px">
+    <div class="card shadow">
+      <div class="card-header" style="font-size: 26px; font-family: google-sans-bold, serif">
+        3. Accepting Terms and Conditions
+      </div>
+      <div class="card-body" style="padding-top: 40px">
+        <span class="card-title" style="font-size: 20px; font-family: google-sans-regular, serif; height: 50px">Your Signature</span>
+        <p style="padding-top: 20px; padding-bottom: 40px; font-family: google-sans-regular, serif">
+          <mat-form-field class="mat-form-field-flex-handle" appearance="outline">
+            <mat-label>Name</mat-label>
+            <label>
+              <input style="font-size: 16px; width: 400px" matInput placeholder="Type your full name" required>
+            </label>
+            <mat-icon matSuffix>account_circle</mat-icon>
+            <mat-hint style="font-family: google-sans-bold, serif">By filling out your full name, you're considered as a participants of this challenge.</mat-hint>
+          </mat-form-field>
+        </p>
+
+        <span class="card-title" style="font-size: 20px; font-family: google-sans-regular, serif; height: 50px; margin-bottom: 20px">Check me</span>
+        <br>
+        <div style="margin-top: 20px">
+          <mat-checkbox style="padding-top: 20px">Accepting Terms and Conditions</mat-checkbox>
+        </div>
+      </div>
+    </div>
+</div>
+  <div style="padding-bottom: 60px">
+    <button style="font-size: 20px" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+      Save Profile
+    </button>
+  </div>
+</div>
