@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import {LoginService} from './auth/login.service';
 
 @Component({
   selector: 'app-root',
@@ -15,9 +16,17 @@ export class AppComponent implements OnInit {
   sticky = false;
   elementPosition: any;
 
-  constructor() { }
+  user: firebase.User;
+
+  constructor(
+    private service: LoginService
+  ) { }
 
   ngOnInit() {
+    this.service.getLoggedInUser()
+      .subscribe( user => {
+        this.user = user;
+      });
   }
 
   // tslint:disable-next-line:use-lifecycle-interface
@@ -30,4 +39,14 @@ export class AppComponent implements OnInit {
     const windowScroll = window.pageYOffset - 0.000001;
     this.sticky = windowScroll >= this.elementPosition;
   }
+
+  loginGoogle() {
+    console.log('login..');
+    this.service.login();
+  }
+
+  logout() {
+    this.service.logout();
+  }
+
 }

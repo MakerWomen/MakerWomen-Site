@@ -1,11 +1,30 @@
-<div class="home-container">
-  <div class="row" style="padding: 30px;">
-    <div class="col-sm" style="background-color: #888888; height: 600px"></div>
-    <div class="col-sm" style="background-color: #2e2e2e;"></div>
+<div class="home-container container">
+  <div class="row" style="padding-top: 30px; padding-bottom: 70px">
+    <div class="col-sm" style="margin-top: 40px; ">
+      <h1 style="font-family: google-sans-black, serif; padding-bottom: 10px" *ngIf="user">Hi {{ user?.displayName }}</h1>
+      <h1 style="font-family: google-sans-black, serif; padding-bottom: 10px" *ngIf="!user">Hi there</h1>
+      <h4 style="font-family: google-sans-medium, serif; margin-top: 20px;">Interested in participating MakerWomen Challenge 2020?</h4>
+      <p style="font-family: product-sans-medium, serif; font-size: 16px; color: #515A5A; padding-top: 10px">This program to help the participants learn and understand the latest trends in technology, to empower students, primarily girls with technical skills and to further connect them to reputed organisations to provide them with various job opportunities to make women as a leader and problem solver. </p>
+      <button class="btn background-challenge-btn primary shadow-button" routerLink="/components/profile">Create your profile</button>
+      <button class="btn background-challenge-btn primary shadow-button" routerLink="/components/register">Register for challenge</button>
+    </div>
+    <div class="col-sm" style="align-content: center; text-align: center; padding-top: 20px; margin-top: 40px">
+      <img src="../../../../assets/images/wtm.jpeg" style="height: 200px; width: 300px">
+    </div>
   </div>
-  <hr style="height: 0; width: 100%; background-color: #000">
-  <div class="row" style="padding: 30px">
-    <div class="col-sm" style="background-color: #426585; height: 400px"></div>
+  <h2>
+    <span style="padding-top: 50px; padding-bottom: 50px; font-family: google-sans-bold, serif">MakerWomen</span>
+  </h2>
+  <div class="row" style="padding-top: 70px">
+    <div class="col-sm">
+      <h3 style="font-family: product-sans-medium, serif">Mission & Vision</h3>
+      <p style="font-family: google-sans-medium, serif; font-size: 17px; color: #515A5A; padding-top: 20px">Enable technology accessible to every women of all age group by organising events, programs and
+        challenges. Make every women capable to solve their local community problem with technology. MakerWomen Challenge are aiming to provide the opportunities which help the participants in building a better career image and enriching knowledge.</p>
+      <p style="font-family: google-sans-medium, serif; font-size: 16px; color: #424949;"> </p>
+      <div style="align-content: center; text-align: center; padding-top: 60px">
+        <img src="../../../../assets/images/wtmlogo.png" alt="WTM Logo" class="wtm-logo"/>
+      </div>
+    </div>
     <!--<div class="col-sm"  style="background-color: #ff00ee">col-sm</div>-->
   </div>
 

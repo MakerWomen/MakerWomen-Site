@@ -304,6 +304,7 @@ svg#clouds {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: .8rem 1rem;
+  background-image: linear-gradient(315deg, #F0F3F4 50%, #FDFEFE 0%);
 }
 
 .background-submit-btn {
@@ -355,4 +356,9 @@ svg#clouds {
   overflow: hidden;
   z-index: 10;
   width: 100%;
+}
+
+.toolbar-avatar {
+  background-size: cover;
+  box-shadow: none;
 }
